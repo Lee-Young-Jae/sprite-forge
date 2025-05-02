@@ -1,6 +1,6 @@
 {
   "name": "sprite-forge",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CLI that turns a folder of SVGs into a sprite.svg + React <SVG> component",
   "type": "module",
   "bin": {
