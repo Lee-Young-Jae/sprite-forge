@@ -1,0 +1,32 @@
+{
+  "name": "sprite-forge",
+  "version": "0.1.0",
+  "description": "CLI that turns a folder of SVGs into a sprite.svg + React <SVG> component",
+  "type": "module",
+  "bin": {
+    "sprite-forge": "bin/index.js"
+  },
+  "exports": {
+    "./buildSprite": "./src/buildSprite.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "keywords": [
+    "svg",
+    "sprite",
+    "react",
+    "cli"
+  ],
+  "author": "Your Name <you@example.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {}
+}
