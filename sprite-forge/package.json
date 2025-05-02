@@ -9,24 +9,25 @@
   "exports": {
     "./buildSprite": "./src/buildSprite.js"
   },
-  "files": [
-    "bin",
-    "src"
-  ],
   "keywords": [
     "svg",
     "sprite",
     "react",
     "cli"
   ],
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "main": "src/buildSprite.js",
   "author": "Your Name <you@example.com>",
   "license": "MIT",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test",
-    "prepublishOnly": "npm run build"
+    "build": "echo \"no build step\""
   },
   "devDependencies": {}
 }

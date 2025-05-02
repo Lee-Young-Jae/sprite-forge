@@ -76,6 +76,7 @@ export const SVG: React.FC<React.SVGProps<SVGSVGElement> & { name: IconName }> =
   fs.writeFileSync(ICON_TSX, tsx, "utf-8");
 
   console.log(`[sprite.svg]·[SVG.tsx] → ${OUT_DIR}`);
+
   return {
     spritePath: SPRITE_SVG,
     componentPath: ICON_TSX,

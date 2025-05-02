@@ -5,9 +5,10 @@ import { buildSprite } from "../src/buildSprite.js"; // ESM import
 const [input = "./icons", output = "./src/shared/ui/icon"] =
   process.argv.slice(2);
 
-buildSprite({ input, output })
-  .then(() => console.log("✔ Done"))
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+try {
+  buildSprite({ input, output });
+  console.log("✔ Done");
+} catch (e) {
+  console.error(e);
+  process.exit(1);
+}
